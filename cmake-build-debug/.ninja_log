@@ -1,0 +1,4 @@
+# ninja log v6
+0	23	1759183614592185617	CMakeFiles/Project.dir/main.cpp.o	9e2d1aef392e1ed
+1	63	1759183614593185637	CMakeFiles/Project.dir/src/glad.c.o	30b6e8f3759b111b
+63	101	1759183614655186883	Project	f84d1ef06f62bf9a
