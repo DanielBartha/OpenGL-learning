@@ -2,3 +2,6 @@
 0	23	1759183614592185617	CMakeFiles/Project.dir/main.cpp.o	9e2d1aef392e1ed
 1	63	1759183614593185637	CMakeFiles/Project.dir/src/glad.c.o	30b6e8f3759b111b
 63	101	1759183614655186883	Project	f84d1ef06f62bf9a
+14	137	1762353645875502800	CMakeFiles/Project.dir/src/glad.c.o	30b6e8f3759b111b
+14	335	1762353645874769031	CMakeFiles/Project.dir/main.cpp.o	9e2d1aef392e1ed
+335	404	1762353646195775891	Project	f84d1ef06f62bf9a
