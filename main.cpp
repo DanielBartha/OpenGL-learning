@@ -17,6 +17,8 @@ void processInput(GLFWwindow* window) {
     }
 }
 
+unsigned int VBO;
+
 int main() {
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -24,7 +26,7 @@ int main() {
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Windoe", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(800, 600, "Window", NULL, NULL);
     if (window == NULL) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
@@ -40,6 +42,22 @@ int main() {
     glViewport(0, 0, 800, 600);
 
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    // defining vertices of triangle
+    float vertices[] = {
+        -0.5f, -0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f,
+        0.0f,  0.5f, 0.0f
+    };
+
+    // generated one buffer object with unique ID
+    glGenBuffers(1, &VBO);
+
+    // bind buffer to target
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+
+    // copies vertex data into buffer memory
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
     // render loop, basically keeps window open after executing instructions
     while (!glfwWindowShouldClose(window)) {
