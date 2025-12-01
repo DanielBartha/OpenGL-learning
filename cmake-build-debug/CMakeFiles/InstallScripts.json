@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/daniel/Documents/Code/OpenGL/Project/cmake-build-debug/cmake_install.cmake"
+		"/home/daniel/Documents/Code/OpenGL/OpenGL-learning/cmake-build-debug/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
