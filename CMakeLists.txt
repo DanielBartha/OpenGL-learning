@@ -11,6 +11,7 @@ find_package(OpenGL REQUIRED)
 add_executable(Project
         main.cpp
         src/glad.c
+        src/main.h
 )
 
 # Point compiler to the include/ directory that holds glad/ and KHR/
@@ -23,3 +24,5 @@ target_link_libraries(Project
         glfw
         OpenGL::GL
 )
+
+include_directories(${PROJECT_SOURCE_DIR}/include)
